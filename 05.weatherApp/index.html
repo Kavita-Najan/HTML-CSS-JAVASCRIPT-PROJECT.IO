@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WetherApp</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/05.weatherApp/css/style.css">
+</head>
+
+<body>
+
+    <section class="vh-100" style="background-color: #C1CFEA;">
+        <div class="container py-5 h-100">
+
+            <div class="row d-flex justify-content-center align-items-center h-100" style="color: #282828;">
+                <div class="col-md-9 col-lg-7 col-xl-5">
+
+                    <form class="form-inline my-3">
+                        <div class="form-group d-flex justify-content-between">
+                            <div><input type="text" class="form-control" placeholder="Enter City Name" name="cityName"
+                                    id="cityName"></div>
+                            <div class="btn btn-primary btn-block" type="submit" value="Search" onclick="search()">
+                                Search</div>
+                        </div>
+                    </form>
+
+                    <div class="card mb-4 gradient-custom" style="border-radius: 25px;">
+                        <div class="card-body p-4">
+
+                            <div id="demo1" class="carousel slide" data-ride="carousel">
+                                <!-- Indicators -->
+                                <ul class="carousel-indicators mb-0">
+                                    <li data-target="#demo1" data-slide-to="0" class="active"></li>
+                                    <li data-target="#demo1" data-slide-to="1"></li>
+                                    <li data-target="#demo1" data-slide-to="2"></li>
+                                </ul>
+                                <!-- Carousel inner -->
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="d-flex justify-content-between mb-4 pb-2">
+                                            <div>
+                                                <h2 class="display-2"><strong>23°C</strong></h2>
+                                                <p class="text-muted mb-0">Coimbra, Portugal</p>
+                                            </div>
+                                            <div>
+                                                <img src="https://mdbootstrap.com/img/Photos/new-templates/bootstrap-weather/ilu3.webp"
+                                                    width="150px">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/05.weatherApp/js/script.js"></script>
+</body>
+
+</html>
